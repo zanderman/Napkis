@@ -1,15 +1,12 @@
 package com.jCAF.napkis;
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +14,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView welcomeImage = (ImageView) findViewById(R.id.welcome_image);
+        Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+        welcomeImage.startAnimation(hyperspaceJumpAnimation);
+
+//        ViewGroup mContainerView;
+//        View newView = (View) findViewById(R.id.login_container);
+//        mContainerView.addView(newView,0);
+
 
     }
 
@@ -40,9 +46,5 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
 
 }
