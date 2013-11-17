@@ -3,6 +3,7 @@ package com.jCAF.napkis;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -56,7 +57,6 @@ public class OrderActivity extends Base_Activity {
        linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
        newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
 
-
        newCard.setId(cardCounter); // define new TAG for each order.
        newCard.setTag("" + cardCounter);
        newCard.setText("Order Number: " + cardCounter);
@@ -74,31 +74,5 @@ public class OrderActivity extends Base_Activity {
         startActivity(intent);
     }
 
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-//        cardCounter = 1;
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 
 }

@@ -10,6 +10,11 @@ apply plugin: 'android'
 
 repositories {
     mavenCentral()
+
+    add(new org.apache.ivy.plugins.resolver.URLResolver()) {
+        name = 'GitHub'
+        addArtifactPattern 'https://github.com/sendgrid/sendgrid-java/raw/v[revision]/repo/com/github/sendgrid/[revision]/sendgrid-[revision]-jar.jar'
+    }
 }
 
 android {
@@ -23,4 +28,5 @@ android {
 }
 
 dependencies {
+    compile 'com.github.sendgrid:sendgrid:0.1.0'
 }

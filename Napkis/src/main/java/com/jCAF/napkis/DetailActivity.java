@@ -2,24 +2,25 @@ package com.jCAF.napkis;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import com.github.sendgrid.SendGrid;
+
+
 
 /**
  * Created by lndsharkfury on 11/17/13.
  */
 public class DetailActivity  extends Base_Activity {
 
-
+    SendGrid sendgrid = new SendGrid("zanderman", "VTech2012");
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
-
-//            LinearLayout dl = (LinearLayout) getLayoutInflater().inflate(R.layout.details_layout, null);
-//            dl.setAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_in));
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.details_layout);
@@ -32,9 +33,15 @@ public class DetailActivity  extends Base_Activity {
         }
 
 
-    // Send reciept using SendGrid
+//    // Send reciept using SendGrid
     public void sendEmail(View view) {
-
+        int x = 0;
+//        sendgrid.addTo("acd1797@vt.edu");
+//        sendgrid.addToName("Example Guy");
+//        sendgrid.setFrom("other@example.com");
+//        sendgrid.setSubject("Hello World");
+//        sendgrid.setText("My first email through SendGrid");
+//        sendgrid.send();
     }
 
 
@@ -62,6 +69,16 @@ public class DetailActivity  extends Base_Activity {
         protected void onDestroy() {
             super.onDestroy();
         }
+
+
+
+
+
+//    private class SendEmailTask extends AsyncTask<String, Void, String> {
+//
+//        @Override
+//        protected String doInBackground()
+//    }
 
 
 }
