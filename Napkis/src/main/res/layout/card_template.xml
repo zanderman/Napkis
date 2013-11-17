@@ -9,6 +9,7 @@
     style="@style/nowCardStyle"
     android:text="hello world!"
     tools:context=".OrderActivity"
+    android:clickable="true"
     android:onClick="orderDetail">
 
 </TextView>

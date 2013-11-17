@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ddd">
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table:"
+            android:textSize="30dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/table_number"
+            android:textSize="25dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingLeft="5dp"/>
+
+        </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/detailGrid"
+        android:background="@drawable/card_bg_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details"
+            android:id="@+id/textView1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="italic"
+            android:paddingBottom="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:paddingTop="10dp">
+
+            <!--Add menu items here!-->
+
+
+            </ScrollView>
+
+    </GridLayout>
+
+</LinearLayout>
