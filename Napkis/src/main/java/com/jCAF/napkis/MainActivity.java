@@ -1,14 +1,19 @@
 package com.jCAF.napkis;
 
+import android.animation.LayoutTransition;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
+
+//    private ViewGroup viewGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +24,6 @@ public class MainActivity extends Activity {
         Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
         welcomeImage.startAnimation(hyperspaceJumpAnimation);
 
-//        ViewGroup mContainerView;
-//        View newView = (View) findViewById(R.id.login_container);
-//        mContainerView.addView(newView,0);
-
 
     }
 
@@ -32,6 +33,11 @@ public class MainActivity extends Activity {
         
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        /*
+        Find a way to place the menu bar on the bottom of the screen...
+         */
+
         return true;
     }
 
@@ -45,6 +51,31 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
 }
