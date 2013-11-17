@@ -11,7 +11,7 @@ import android.widget.TextView;
 /**
  * Created by lndsharkfury on 11/17/13.
  */
-public class DetailActivity  extends Activity {
+public class DetailActivity  extends Base_Activity {
 
 
 
