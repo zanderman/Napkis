@@ -3,6 +3,7 @@ package com.jCAF.napkis;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.os.Looper;
 import android.util.Log;
 
 import java.io.DataInputStream;
@@ -54,7 +55,8 @@ public class NapService extends Service
 
         public void run()
         {
-                try
+            Looper.prepare();
+            try
                 {
                     serverSocket = new ServerSocket(2000);
                     socket = serverSocket.accept();
@@ -89,10 +91,13 @@ public class NapService extends Service
                             Log.i(TAG, "second: " + dataString.substring(second, third-1));
                             Log.i(TAG, "third: " + dataString.substring(third, dataString.length() - 1));
 
-                            NapApp app = new NapApp();
-                            NapApp.sendHttp send = app.new sendHttp();
 
-                            send.execute(dataString);
+//                            NapApp app = new NapApp();
+//                            NapApp.sendHttp send = app.new sendHttp();
+//
+//                            send.execute(dataString);
+                            OrderActivity serv = new OrderActivity();
+                            serv.serviceGrabber(dataString);
 
                             dataString = "";
                             bytesRead = 0;
@@ -156,6 +161,7 @@ public class NapService extends Service
                         }
                     }
                 }
+            Looper.loop();
         }
     }
 }

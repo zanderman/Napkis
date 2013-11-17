@@ -2,6 +2,7 @@ package com.jCAF.napkis;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,11 +10,11 @@ import android.view.MenuItem;
 /**
  * Created by lndsharkfury on 11/17/13.
  */
+
+
 public class Base_Activity extends Activity {
 
     String TAG;
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -42,5 +43,6 @@ public class Base_Activity extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 }
