@@ -32,6 +32,12 @@ public class DetailActivity  extends Base_Activity {
         }
 
 
+    // Send reciept using SendGrid
+    public void sendEmail(View view) {
+
+    }
+
+
         @Override
         protected void onStart() {
             super.onStart();

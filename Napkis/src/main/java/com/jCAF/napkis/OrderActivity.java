@@ -55,6 +55,8 @@ public class OrderActivity extends Base_Activity {
        linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
        newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
 
+
+       newCard.setId(cardCounter); // define new ID for each card.
        newCard.setText("Order Number: " + cardCounter);
        newCard.setAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_right));
 
@@ -66,6 +68,7 @@ public class OrderActivity extends Base_Activity {
     public void orderDetail(View view) {
 
         Intent intent = new Intent(this, DetailActivity.class);
+        TextView cardDesired = (TextView) findViewById(newCard.getId());
         intent.putExtra("table_number", " " + cardCounter);
         startActivity(intent);
     }
