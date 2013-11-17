@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+    <!--Portrait Layout-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
@@ -7,23 +10,23 @@
     android:layout_height="match_parent"
     android:background="#ddd">
 
-    <!--Tabbed items go here!-->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+    <!--&lt;!&ndash;Tabbed items go here!&ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="press_me!"
-            android:onClick="addCard"/>
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="press_me!"-->
+            <!--android:onClick="addCard"/>-->
 
 
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
     <!--CardUI goes here!-->
     <fragment

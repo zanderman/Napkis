@@ -15,24 +15,61 @@ import android.widget.TextView;
  */
 public class OrderActivity extends Activity {
 
-//    String TAG;
+    public LinearLayout linearCardLayout;
+    public TextView newCard;
+    public static int cardCounter = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_layout);
+    }
+
+
+    // Add a new card to the view.
+   public void addCard() {
+
+
+       // Add new card when prompted.
+       linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
+       newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
+
+       newCard.setAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_right));
+
+       linearCardLayout.addView(newCard);
+       cardCounter++;
+   }
+
+    // Load all information pertaining to thaa specific order.
+    public void orderDetail() {
 
     }
 
-   public void addCard(View view) {
 
-       // Add text
-       LinearLayout linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
-       TextView newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
+    @Override
+    protected void onStart() {
+        super.onStart();
+        cardCounter = 0;
+    }
 
-       newCard.setAnimation(AnimationUtils.loadAnimation( this, R.anim.slide_up_right));
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
-       linearCardLayout.addView(newCard);
-   }
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 
 }
