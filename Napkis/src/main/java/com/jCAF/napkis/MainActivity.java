@@ -2,9 +2,11 @@ package com.jCAF.napkis;
 
 import android.animation.LayoutTransition;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -76,6 +78,16 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+
+
+   // Functions
+    public void goToCardLayout(View view) {
+
+        Intent intent = new Intent(this, OrderActivity.class);
+        startActivity(intent);
+
     }
 
 }

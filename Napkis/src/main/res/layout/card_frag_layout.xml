@@ -36,6 +36,24 @@
                 style="@style/nowCardStyle"
                 android:text="hello world!"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nowCardStyle"
+                android:text="hello world!"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nowCardStyle"
+                android:text="hello world!"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nowCardStyle"
+                android:text="hello world!"/>
+
             </LinearLayout>
 
 

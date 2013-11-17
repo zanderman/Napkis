@@ -44,7 +44,8 @@
             android:text="Login..."
             android:id="@+id/doLogin_btn"
             android:layout_gravity="center_horizontal"
-            android:textStyle="italic"/>
+            android:textStyle="italic"
+            android:onClick="goToCardLayout"/>
 
 
         <!--Add company icon here once completed!-->
