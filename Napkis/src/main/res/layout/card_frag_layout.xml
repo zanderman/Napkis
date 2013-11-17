@@ -13,62 +13,70 @@
         android:layout_gravity="center_horizontal"
         android:fillViewport="true">
 
-        <com.jCAF.napkis.CardLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="25dp">
+            android:id="@+id/llayout1">
+
+            </LinearLayout>
+
+        <!--<com.jCAF.napkis.CardLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="25dp">-->
 
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            <TextView
-                android:id="@+id/txtView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/nowCardStyle"
-                android:text="hello world!"
-                tools:context=".OrderActivity"/>
+            <!--<TextView-->
+                <!--android:id="@+id/txtView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/nowCardStyle"-->
+                <!--android:text="hello world!"-->
+                <!--tools:context=".OrderActivity"/>-->
 
-            </com.jCAF.napkis.CardLayout>
+            <!--</com.jCAF.napkis.CardLayout>-->
 
 
 
