@@ -2,6 +2,7 @@ package com.jCAF.napkis;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,7 +28,7 @@ public class OrderActivity extends Activity {
 
 
     // Add a new card to the view.
-   public void addCard() {
+   public void addCard(View view) {
 
 
        // Add new card when prompted.
@@ -40,9 +41,11 @@ public class OrderActivity extends Activity {
        cardCounter++;
    }
 
-    // Load all information pertaining to thaa specific order.
-    public void orderDetail() {
+    // Load all information pertaining to that specific order.
+    public void orderDetail(View view) {
 
+        Intent intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 
 

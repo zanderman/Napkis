@@ -28,6 +28,10 @@
             android:name=".OrderActivity"
             android:label="Orders..."></activity>
 
+        <activity
+            android:name=".DetailActivity"
+            android:label="Details..."></activity>
+
 
     </application>
 

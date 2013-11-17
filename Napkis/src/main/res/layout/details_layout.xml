@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd">
+
+
+    <!--CardUI goes here!-->
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.jCAF.napkis.Detail_Fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:layout="@layout/order_details_fragment" />
 
 </LinearLayout>

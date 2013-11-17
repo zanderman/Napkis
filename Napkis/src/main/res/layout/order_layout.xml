@@ -10,25 +10,7 @@
     android:layout_height="match_parent"
     android:background="#ddd">
 
-    <!--&lt;!&ndash;Tabbed items go here!&ndash;&gt;-->
-    <!--<LinearLayout-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_weight="1"-->
-        <!--android:gravity="center"-->
-        <!--android:orientation="vertical">-->
 
-        <!--<Button-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="press_me!"-->
-            <!--android:onClick="addCard"/>-->
-
-
-
-    <!--</LinearLayout>-->
-
-    <!--CardUI goes here!-->
     <fragment
         android:id="@+id/card_order_fragment"
         android:name="com.jCAF.napkis.Card_Fragment"
