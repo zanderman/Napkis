@@ -40,8 +40,9 @@ public class OrderActivity extends Base_Activity {
             case R.id.refresh:
                 addCard(findViewById(R.id.scrollView));
                 return true;
+
             default:
-                return true;
+                return super.onOptionsItemSelected(item);
         }
     }
 
