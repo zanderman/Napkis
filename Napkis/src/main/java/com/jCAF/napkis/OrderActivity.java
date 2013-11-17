@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -26,9 +27,12 @@ public class OrderActivity extends Activity {
    public void addCard(View view) {
 
        // Add text
-       LinearLayout ll = (LinearLayout) findViewById(R.id.llayout1);
-       TextView tv = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
-       ll.addView(tv);
+       LinearLayout linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
+       TextView newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
+
+       newCard.setAnimation(AnimationUtils.loadAnimation( this, R.anim.slide_up_right));
+
+       linearCardLayout.addView(newCard);
    }
 
 }
