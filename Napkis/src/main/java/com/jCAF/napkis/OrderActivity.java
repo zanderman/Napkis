@@ -50,26 +50,27 @@ public class OrderActivity extends Base_Activity {
     // Add a new card to the view.
    public void addCard(View view) {
 
+       cardCounter++;
 
        // Add new card when prompted.
        linearCardLayout = (LinearLayout) findViewById(R.id.llayout1);
        newCard = (TextView) getLayoutInflater().inflate(R.layout.card_template, null);
 
 
-       newCard.setId(cardCounter); // define new ID for each card.
+       newCard.setId(cardCounter); // define new TAG for each order.
+       newCard.setTag("" + cardCounter);
        newCard.setText("Order Number: " + cardCounter);
        newCard.setAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_up_right));
 
        linearCardLayout.addView(newCard);
-       cardCounter++;
+
    }
 
     // Load all information pertaining to that specific order.
     public void orderDetail(View view) {
 
         Intent intent = new Intent(this, DetailActivity.class);
-        TextView cardDesired = (TextView) findViewById(newCard.getId());
-        intent.putExtra("table_number", " " + cardCounter);
+        intent.putExtra("table_number", "" + view.getTag()); // Grab TAG for specific order.
         startActivity(intent);
     }
 
@@ -77,7 +78,7 @@ public class OrderActivity extends Base_Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        cardCounter = 0;
+//        cardCounter = 1;
     }
 
     @Override
