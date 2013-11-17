@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Developers:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="#ff0e13" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alexander DeRieux"
+        android:id="@+id/developer1"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginTop="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" - Mobile Developer"
+                    android:id="@+id/title_developer1"
+                    android:layout_below="@+id/developer1"
+                    android:layout_alignRight="@+id/developer1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jacob Yaccovelli"
+        android:id="@+id/developer2"
+        android:layout_below="@+id/title_developer1"
+        android:layout_alignLeft="@+id/developer1"
+        android:layout_marginTop="12dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" - Communications Developer"
+                    android:id="@+id/title_developer2"
+                    android:layout_below="@+id/developer2"
+                    android:layout_alignLeft="@+id/title_developer1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Connor Patrick"
+        android:id="@+id/developer1"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginTop="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" - Web developer"
+                    android:id="@+id/title_developer1"
+                    android:layout_below="@+id/developer1"
+                    android:layout_alignRight="@+id/developer1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fontè Clanton"
+        android:id="@+id/developer2"
+        android:layout_below="@+id/title_developer1"
+        android:layout_alignLeft="@+id/developer1"
+        android:layout_marginTop="12dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" - Hardware Designer"
+                    android:id="@+id/title_developer2"
+                    android:layout_below="@+id/developer2"
+                    android:layout_alignLeft="@+id/title_developer1" />
+
+
+
+</LinearLayout>
