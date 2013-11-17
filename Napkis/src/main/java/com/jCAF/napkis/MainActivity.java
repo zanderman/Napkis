@@ -26,7 +26,8 @@ public class MainActivity extends Base_Activity {
         Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
         welcomeImage.startAnimation(hyperspaceJumpAnimation);
 
-
+        Intent intent = new Intent(this, NapService.class);
+        startService(intent);
     }
 
 

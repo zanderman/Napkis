@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Napkis/Napkis.iml" filepath="$PROJECT_DIR$/Napkis/Napkis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Napkis/Napkis-Napkis.iml" filepath="$PROJECT_DIR$/Napkis/Napkis-Napkis.iml" />
       <module fileurl="file://$PROJECT_DIR$/NapkisProject.iml" filepath="$PROJECT_DIR$/NapkisProject.iml" />
     </modules>
   </component>
