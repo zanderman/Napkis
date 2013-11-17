@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ddd">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -11,7 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:fillViewport="true">
 
-        <LinearLayout
+        <com.jCAF.napkis.CardLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -19,42 +21,54 @@
 
 
             <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/nowCardStyle"
-            android:text="hello world!"/>
-
-            <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/nowCardStyle"
-            android:text="hello world!"/>
-
-            <TextView
+                android:id="@+id/txtView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/nowCardStyle"
-                android:text="hello world!"/>
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
 
             <TextView
+                android:id="@+id/txtView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/nowCardStyle"
-                android:text="hello world!"/>
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
 
             <TextView
+                android:id="@+id/txtView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/nowCardStyle"
-                android:text="hello world!"/>
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
 
             <TextView
+                android:id="@+id/txtView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/nowCardStyle"
-                android:text="hello world!"/>
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nowCardStyle"
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
+
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nowCardStyle"
+                android:text="hello world!"
+                tools:context=".OrderActivity"/>
+
+            </com.jCAF.napkis.CardLayout>
 
 
 
