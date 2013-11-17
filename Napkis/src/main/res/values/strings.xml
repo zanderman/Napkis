@@ -4,7 +4,7 @@
     <string name="app_name">Napkis</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="table_number"></string>
+    <string name="table_number">someNUmber</string>
     <string name="order_details">Order Summary: </string>
 
 
