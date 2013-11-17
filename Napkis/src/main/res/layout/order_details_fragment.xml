@@ -10,7 +10,7 @@
 
     <GridLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@drawable/card_bg_shadow">
 
         <TextView
@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Table:"
             android:textSize="30dp"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="0"
             android:textStyle="bold" />
@@ -25,8 +26,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/table_number"
+            android:hint="#"
+            android:id="@+id/table_number"
             android:textSize="25dp"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="1"
             android:paddingLeft="10dp"/>
@@ -36,7 +39,7 @@
 
     <GridLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="670dp"
         android:id="@+id/detailGrid"
         android:background="@drawable/card_bg_shadow">
 
@@ -65,5 +68,15 @@
             </ScrollView>
 
     </GridLayout>
+
+    <Button
+        android:layout_width="567dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Send reciept"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#DA0000"/>
 
 </LinearLayout>

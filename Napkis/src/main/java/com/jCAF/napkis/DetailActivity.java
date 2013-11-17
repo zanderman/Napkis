@@ -23,6 +23,12 @@ public class DetailActivity  extends Base_Activity {
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.details_layout);
+
+            Intent intent = getIntent();
+            String number = intent.getStringExtra("table_number");
+
+            TextView numberTextView = (TextView) findViewById(R.id.table_number);
+            numberTextView.setText(number);
         }
 
 
