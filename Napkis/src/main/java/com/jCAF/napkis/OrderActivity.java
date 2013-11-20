@@ -128,7 +128,10 @@ public class OrderActivity extends Base_Activity {
         NapApp.sendHttp send = app.new sendHttp();
 
         send.execute(str);
+
+
         stuff = str;
+
 
     }
 

@@ -33,15 +33,14 @@ public class DetailActivity  extends Base_Activity {
         }
 
 
-//    // Send reciept using SendGrid
+    // Send receipt using SendGrid
     public void sendEmail(View view) {
-//        int x = 0;
-//        sendgrid.addTo("acd1797@vt.edu");
-//        sendgrid.addToName("Example Guy");
-//        sendgrid.setFrom("other@example.com");
-//        sendgrid.setSubject("Hello World");
-//        sendgrid.setText("My first email through SendGrid");
-//        sendgrid.send();
+        sendgrid.addTo("acd1797@vt.edu");
+        sendgrid.addToName("Example Guy");
+        sendgrid.setFrom("other@example.com");
+        sendgrid.setSubject("Hello World");
+        sendgrid.setText("My first email through SendGrid");
+        sendgrid.send();
     }
 
 
